@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;1,100;1,400;1,700&display=swap');
 
+:root{
+    --main-color:#9c7fd3;
+    --secondary-color: red; 
+}
+
+
+
 body{ 
     background-color:  rgb(20,20,20);
     color: white;
@@ -109,13 +116,14 @@ footer ul {
 a {
     text-decoration: none;
     color: white; 
+    font-size: 20px;
 }
 
 
 .socials {
     width: 100px;
     height: 200px;
-    background-color: rgb(125, 109, 218) ;
+    background-color: rgb(144, 133, 209) ;
     border-radius: 30px 0 0 30px;
     position: fixed;
     right: 0;
@@ -151,7 +159,7 @@ a {
 .work-details a:hover, 
 header ul li a:hover,
 .options a:hover {
-    color: steelblue;
+    color: var(--main-color)
 }
 
 
@@ -161,7 +169,7 @@ header ul li a:hover,
 
 
 footer ul a:hover {
-    color: rgb(147, 147, 240); 
+    color: var(--secondary-color)
 }
 
 
@@ -236,6 +244,12 @@ form button {
 
 }
 
+
+#espaciador {
+    border-top: 0px ;
+    width: 1rem;
+    display: inline-block;
+}
 
 
 /*Responsiveness*/
