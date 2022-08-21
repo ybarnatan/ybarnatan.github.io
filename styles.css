@@ -35,10 +35,26 @@ li {
 
 
 h1 {
-    font-size: 160px; 
+    font-size: 110px; 
     font-weight: 700;
     margin: 0;
-    
+}
+
+#titulo-phd{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 600;
+    display: flex; 
+    justify-content: center;
+    padding: 1rem;
+}
+
+#summary p {
+    font-size: 20px;
+    display: flex; 
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 h2 {
@@ -53,10 +69,20 @@ h3 {
 }
 
 .subtitle {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 600;
     display: flex; 
     justify-content: center;
+        padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.redirect { 
+    font-size: 20px;
+    font-weight: 300;
+    display: flex; 
+    justify-content: center;
+    color: red;
 }
 
 .courses-certif{
@@ -144,6 +170,57 @@ a {
 }
 
 
+/*typewrite effect*/
+.wrapper {
+    height: 10vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 35ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  
+
+/* PhD page*/
+.button-container-div {
+    text-align: center;
+}
+.boton-cv {
+    background-color: rgb(36, 111, 187);
+    text-align: center;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  /* Darker background on mouse-over */
+  .boton-cv:hover {
+    background-color: rgb(19, 53, 153);
+  }
+
+
 
 
 /* Work Pages*/
@@ -172,6 +249,11 @@ footer ul a:hover {
     color: var(--secondary-color)
 }
 
+
+
+#link-paper:hover{
+    color: rgb(171, 243, 36)
+}
 
 /*About me */
 
@@ -247,8 +329,12 @@ form button {
 
 #espaciador {
     border-top: 0px ;
-    width: 1rem;
     display: inline-block;
+}
+
+
+.redireccionamiento{
+    text-align: center;
 }
 
 
