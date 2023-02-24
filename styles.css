@@ -55,6 +55,8 @@ h1 {
     justify-content: center;
     padding-left: 10rem;
     padding-right: 10rem;
+    text-align: justify;
+
 }
 
 h2 {
@@ -389,6 +391,28 @@ form button {
 
 }
 
+
+.subtitle #email_link {
+    width: 20%;
+    background-color: rgb(40, 29, 197);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+ #email_link a:hover {
+    background-color: rgb(208, 255, 0);
+    color: black;
+
+}
+
+
+#summary #unCongreso h4{
+    font-size: large;
+    color: white;
+    width: 100%;
+    padding-left: 10%;
+}
 
 #espaciador {
     border-top: 0px ;
