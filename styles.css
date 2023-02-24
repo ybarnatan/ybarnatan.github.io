@@ -84,6 +84,8 @@ p #link-paper{
     justify-content: center;
     padding-left: 8rem;
     padding-right: 8rem;
+    font-size: 20px;
+
 }
 
 
@@ -407,10 +409,15 @@ form button {
 }
 
 
-#summary #unCongreso h4{
-    font-size: large;
+#summary #unCongreso h4 {
     color: white;
     width: 100%;
+    padding-left: 10%;
+}
+
+#summary #unCongreso p {
+    color: white;
+    width: 90%;
     padding-left: 10%;
 }
 
