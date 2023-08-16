@@ -384,20 +384,20 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 20px;
+    padding: 15px;
     justify-content: center;
     background-color: #2c2424;
-    border-radius: 2%;
+    border-radius: 3%;
 }
 
 .card {
     background-color: #130d0d;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .photo {
@@ -405,7 +405,7 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .link {
@@ -457,29 +457,46 @@ footer ul a:hover {
     color: rgb(171, 243, 36)
 }
 
+
+
+/*---------------------------------------------*/
 /*About me */
+/*---------------------------------------------*/
 
-.about-me{
-    width: 50%;
+.about-me-container {
+    display: grid;
+    grid-template-columns: repeat(3fr, auto);
+    grid-gap: 10px;
+    padding: 30px;
     text-align: center;
+    font-size: medium;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    font-size: medium;
 
-.about-me img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 40px 10px 10px 10px;
-}
+  }
+  
+  .about-me-column {
+    background-color: #3d2e2e;
+    border: 2px solid #af8e8e;
+    padding: 10px;
+    text-justify: auto;
+  }
+
+  .profile-pic { 
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 40px 10px 10px 10px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  font-size: medium;
+  }
 
 
-
-
-
+  /*---------------------------------------------*/
 /* Contact page*/
-
+/*---------------------------------------------*/
 .form-submit {
     width: 50%; 
 
