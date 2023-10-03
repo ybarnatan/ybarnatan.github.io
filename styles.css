@@ -400,9 +400,15 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
     padding: 10px;
 }
 
+
+#boton-proyecto:hover {
+background-color: lime;
+color: black;
+}
+
 .photo {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 5px;
@@ -438,7 +444,7 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
 .work-details a:hover, 
 header ul li a:hover,
 .options a:hover {
-    color: var(--main-color)
+    color: var(--green)
 }
 
 
