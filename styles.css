@@ -382,7 +382,7 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
   
 .grid-container-proyecto {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 15px;
     justify-content: center;
@@ -415,7 +415,7 @@ color: black;
 }
 
 .link {
-    background-color: #007bff;
+    background-color: #3684d8;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
