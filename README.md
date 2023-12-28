@@ -2,4 +2,4 @@
 
 Own portfolio created using HTML, CSS and JS.
 
-(Visit me)[https://ybarnatan.github.io/index.html]
+[Visit me](https://ybarnatan.github.io/index.html)
