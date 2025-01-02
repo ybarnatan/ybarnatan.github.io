@@ -1,186 +1,351 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;1,100;1,400;1,700&display=swap');
+/*--------------*/
+/* GENERAL */
+/*--------------*/
 
-:root{
-    --main-color:#9c7fd3;
-    --secondary-color: red; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(-60deg, rgba(99, 79, 228, 0.892) 10%,
+                                                rgba(8, 0, 255, 0.849));
+}
+
+/*   --------------    */
+/* CIRCULOS DE FONDO */
+/*   --------------    */
+.circles>* {
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.circle-one {
+    background-color: rgb(201, 2, 236);
+    box-shadow: inset 25px 25px 40px rgba(0, 0, 0, 0.24),
+                  inset -25px -25px 40px rgba(255, 253, 253, 0.685);
+    bottom: 5%;
+    right: 20%;
+}
+
+.circle-two {
+    background-color: rgb(255, 132, 0);
+    box-shadow: inset 25px 25px 40px rgba(0, 0, 0, 0.24),
+                  inset -25px -25px 40px rgba(255, 253, 253, 0.685);
+    top: 15%;
+    left: 70%;
+}
+
+.circle-three {
+    background-color: rgba(214, 162, 198, 0.856);
+    box-shadow: inset 25px 25px 40px rgba(0, 0, 0, 0.24), 
+                  inset -25px -25px 40px rgba(255, 253, 253, 0.685);
+    bottom: -30%;
+    left: 20%;
 }
 
 
-
-body{ 
-    background-color:  rgb(20,20,20);
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300; 
+.circle-four {
+    background-color: rgba(0, 255, 0, 0.856);
+    box-shadow: inset 25px 25px 40px rgba(0, 0, 0, 0.24), 
+                  inset -25px -25px 40px rgba(255, 253, 253, 0.685);
+    bottom:  30%;
+    left: 25%;
 }
 
+
+.circle-five {
+    background-color: rgba(255, 0, 0, 0.856);
+    box-shadow: inset 25px 25px 40px rgba(0, 0, 0, 0.24), 
+                  inset -25px -25px 40px rgba(255, 253, 253, 0.685);
+    bottom: -60%;
+    left: 75%;
+}
+
+
+.circle-six {
+    background-color: rgb(139, 36, 165);
+    box-shadow: inset 25px 25px 40px rgba(0, 0, 0, 0.24), 
+                  inset -25px -25px 40px rgba(255, 253, 253, 0.685);
+    bottom: -80%;
+    left: 10%;
+}
+
+
+/*   --------------    */
+/*HEADER y NAV*/
+/*   --------------    */
 
 header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
 }
 
-header ul {
+header p {
     display: flex;
-    padding: 10px 10px 50px 10px;
-
+    align-items: center;
+    margin-top: 1rem;
+    padding: 2px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.384);
+    backdrop-filter: blur(30px);
 }
 
+header p:hover {
+    background-color: white;
+    color: green;
+    transition: all .5s ease;
+}
 
+header img {
+    width: 50px;
+    margin: 1rem;
+    border-radius: 50%;
+    border: 2px solid white;
+}
 
-li {
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2vw;
+    margin-top: 10px;
+}
+
+nav li {
     list-style: none;
-    margin: 5px 10px;
+    background-color: rgba(12, 241, 69, 0.068);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.226);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    cursor: pointer;
 }
 
-
-h1 {
-    font-size: 110px; 
-    font-weight: 700;
-    margin: 0;
-}
-
-#titulo-phd{
-    font-size: 50px;
-    font-style: italic;
-    font-weight: 600;
-    display: flex; 
-    justify-content: center;
-    padding: 1rem;
-}
-
-#summary p {
-    font-size: 20px;
-    display: flex; 
-    justify-content: center;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    text-align: justify;
-
-}
-
-h2 {
-    margin: 3px;
-    font-weight: 450;
-    text-align: center;
-}
-
-
-h3 {
-    margin:0;
-}
-
-.subtitle {
-    font-size: 30px;
-    font-weight: 600;
-    display: flex; 
-    justify-content: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-p #link-paper{
-    display: flex; 
-    justify-content: center;
-    padding-left: 8rem;
-    padding-right: 8rem;
-    font-size: 20px;
-
-}
-
-
-.redirect { 
-    font-size: 20px;
-    font-weight: 300;
-    display: flex; 
-    justify-content: center;
-    color: red;
-}
-
-.courses-certif{
-    font-size: 20px;
-}
-
-
-
-.hero-section{
-    text-align: center;
-    margin-top: 17vh;
-}
-
-section{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.light-text { 
-    font-weight: 100;
-}
-
-
-footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    bottom: 0;
-    left: 0;
-    width: 100vw; 
-}
-
-
-footer ul {
-    display: flex;
-    padding: 10px 10px 50px 10px;
-
- 
-   
-}
-
-.options {
-    display:flex; 
-    font-size: larger;
-}
-
-.options a {
-    margin: 20px; 
-}
-
-
-
-
-
-a {
+nav>li>a {
     text-decoration: none;
-    color: white; 
-    font-size: 20px;
 }
 
 
-.socials {
-    width: 100px;
-    height: 200px;
-    background-color: rgb(144, 133, 209) ;
-    border-radius: 30px 0 0 30px;
-    position: fixed;
-    right: 0;
-    top: 40vh;
+
+nav li:hover {
+    background-color: white;
+    color: green;
+    outline: 2px solid white;
+    outline-offset: 5px;
+    animation: none;
+    transition: all .3s ease;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 
-.social {
-    width: 100%; /*no del browser sino de su parent, que es .socials*/
+/*   --------------    */
+/* Cards */
+/*   --------------    */
+.options {
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 30px;
+}
+
+.options>* {
+    height: 400px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.096);
+    border-radius: 10px;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+    cursor: pointer;
+}
+
+.options>* h3 {
     height: 50%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.options p {
+    text-align: center;
+    margin-top: 10px;
+}
 
+.options>*:hover {
+    box-shadow: inset -10px -10px 20px rgba(255, 255, 255, 0.158);
+}
+
+.read h3 {
+    background-color: salmon;
+}
+
+.option .read .photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
 }
 
 
-.social svg {
-    fill: white;
+
+/*   --------------    */
+/*FOTOS Y BOTONES DENTRO DE CARDS */
+/*   --------------    */
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    
 }
 
+.read {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Centers all elements horizontally */
+    justify-content: center; /* Centers all elements vertically (if the container has a fixed height) */
+    text-align: center; /* Centers the text */
+}
+
+
+.link {   /* Base styling for the link */
+    display: inline-flex; /* Use flexbox to center the content */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    backdrop-filter: blur(8px); /* Apply the blur effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+.link:hover {    /* Hover effect for glassmorphism */
+    background: rgba(255, 255, 255, 0.3); /* Slightly darker background */
+    border: 2px solid rgba(255, 255, 255, 0.6); /* More visible border */
+    backdrop-filter: blur(12px); /* Increase blur on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.link:focus {  /* Optional: Adding a focus effect for accessibility */
+    outline: 5px solid #fff;
+    outline-offset: 4px;
+}
+
+
+
+/*  BOTON CONTACT ME*/
+
+.community {
+    font-size: 1.3rem;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(61, 235, 76, 0.815);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.community:hover {
+    background-color: rgb(255, 255, 255);
+    outline: 2px solid green;
+    color: green;
+    transition: background-color .5s ease, color .5s ease;
+}
+
+.banner {
+    max-width: 800px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    background-image: linear-gradient(90deg, #17df4233 30%,
+                        rgba(255, 255, 255, 0.055) 50%, 
+                        rgba(0, 0, 0, 0.075) 50%);
+    backdrop-filter: blur(30px);
+    animation: banner-shadow 1s infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes banner-shadow {
+    from {
+        box-shadow: 0 0 5px white;
+    }
+
+    to {
+        box-shadow: 0 0 15px white;
+    }
+}
+
+.banner h1 {
+    font-size: 3.5rem;
+    transform: translateX(50px) rotateZ(-30deg);
+}
+
+.banner div {
+    width: 50%;
+    font-size: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.banner div p {
+    margin-top: 10px;
+}
+
+
+
+/*My Pic*/
+img {
+    width: 100%; /* Responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 250px; /* Limit width */
+    max-height: 250px; /* Limit height */
+}
 
 /*typewrite effect*/
 .wrapper {
@@ -192,7 +357,7 @@ a {
   
   .typing-demo {
     width: 46ch; /*LARGO DEL STRING*/
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    animation: typing 2.5s steps(25), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -214,404 +379,163 @@ a {
   
 
 
-/*Animation border for links in navbar and menu */
+  @keyframes list-bg {
+    from {
+        background-color: rgba(183, 217, 196, 0.272);
+    }
 
-div.container
-{
-    margin: 0 auto;
-	text-align: center;
+    to {
+        background-color: rgba(23, 85, 13, 0.444);
+    }
 }
 
-div.container a
-{
-    color: #FFF;
+/* Estilos para la sección About Me */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilo para el navbar (solo ejemplo) */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  nav a {
+    color: white;
     text-decoration: none;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
+    padding: 10px 20px;
+  }
+  
+
+/*----------------------------------*/
+/* Estilos para la sección About Me */
+/*----------------------------------*/
+
+  .about-content {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  .about-content h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+
+  /*----------------------------------*/
+  /* Boton Linkedin */
+/*----------------------------------*/
+
+.socials {
+    width: 130px;
+    height: 120px;
+    background-color: rgb(251, 251, 251) ;
+    border-radius: 30px 0 0 30px;
+    position: fixed;
+    right: 0;
+    top: 35vh;
+}
+
+.social svg {
+    fill: rgb(247, 29, 29);
+}
+
+.social {
+    background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px); /* Desenfoque en el fondo */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  }
+  
+  /* Efecto de aumento de tamaño al pasar el ratón (hover) */
+  .social:hover {
+    transform: scale(1.5); /* Aumento de tamaño */
+    box-shadow: 0 6px 40px rgba(230, 80, 80, 0.2); /* Sombra más pronunciada */
+  }
+  
+
+
+
+/*BOTON LINKEDIN ABAJO For Media query*/
+
+.linkedin_btn {
+    font-size: 1.3rem;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    background-color: rgba(255, 0, 0, 0.815);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding: .5rem 1rem;
     cursor: pointer;
 }
 
-/* Top and Bottom borders go out */
-div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
-{
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-}
-
-div.topBotomBordersOut a:before
-{
-    top: 0px;
-    transform: translateY(10px);
-}
-
-div.topBotomBordersOut a:after
-{
-    bottom: 0px;
-    transform: translateY(-10px);
-}
-
-div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
-{
-    opacity: 1;
-    transform: translateY(0px);
+.linkedin_btn:hover {
+    background-color: rgb(255, 255, 255);
+    outline: 2px solid green;
+    color: green;
+    transition: background-color .5s ease, color .5s ease;
 }
 
 
-/*----------------------------*/
-/*           SKILLS           */
-/*----------------------------*/
 
-/*CUBE PROGRAMMING LANGUAGES*/
 
-.hero-image{
-    position: relative;
-    width: 50%;
-    height: 350px; 
+
+/*------------------------*/
+/* MEDIA QUERIES */
+/*------------------------*/
+.linkedin_btn { /*Escondido a menos que hit media query*/
+    display: none;
+}
+
+  @media (max-width: 1800px) {
+   .socials {
+    display: none;
+   }
+   
+
+   .linkedin_btn {
     display: block;
-    display: block;
- } 
-
- .cube {
-     position: absolute; /*absolute relative to the .hero-image*/
-     width: 10vw;
-     height: 10vw;
-     transform: rotate(-25deg) skew(25deg);
- }
-
- .cube:before {
-     position: absolute;
-     content: '';
-     width: 21px;
-     height: 100%;
-     transform: skewY(-45deg);
-     left: -20px;
-     bottom: -10px;
- }
-
- .cube:after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 21px;
-    transform: skewX(-45deg);
-    left: -10px;
-    bottom: -20px;
- }
-
- #python {
-    left: 800px;
-    bottom: 170px;
-    background-image: url("imgs/python.jpeg");
-    background-size: cover;
-    background-color: rgb(175, 119, 227);
-    box-shadow: -60px 60px 20px rgb(50 50 50/ 15%);
-  }
-  
-  #python:before {
-    background-color: rgb(189, 154, 221);
-  }
-  
-  #python:after {
-    background-color: rgb(205, 188, 221);
-  }
-  
-  #r-programming {
-    left: 400px;
-    bottom: 170px;
-    background-image: url("imgs/r.png");
-    background-size: cover;
-    background-color: rgb(227, 119, 191);
-    box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
-  }
-  
-  #r-programming:before {
-    background-color: rgb(221, 154, 207);
-  }
-  
-  #r-programming:after {
-    background-color: rgb(221, 188, 211);
-  }
-
-
-/*TECH SKILLS */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-    background-color: #362c2c;
-}
-
-.card {
-    background-color: #523a3a;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
 }
 
 .photo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.title {
-    font-size: 22px;
-    font-weight: bold;
-    color: #fffefe;
-    text-align: center;
-}
-
-
-/*----------*/
-
-
-  
-.grid-container-proyecto {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 15px;
-    justify-content: center;
-    background-color: #2c2424;
-    border-radius: 3%;
-}
-
-.card {
-    background-color: #130d0d;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-
-
-#boton-proyecto:hover {
-background-color: lime;
-color: black;
-}
-
-.photo {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 5px;
-}
-
-.link {
-    background-color: #3684d8;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-
-.description {
-    font-size: 18px;
-    text-align: center;
-    color: #ffffff;
-}
-
-/* Work Pages*/
-
-.work-details{
-    width: 50%
-}
-
-.work-details td { 
-    padding: 30px;
-}
-
-.work-details a:hover, 
-header ul li a:hover,
-.options a:hover {
-    color: var(--green)
-}
-
-
-#footer-link:hover{
-    color: rgb(3, 111, 199)
-}
-
-
-footer ul a:hover {
-    color: var(--secondary-color)
-}
-
-
-
-#link-paper:hover{
-    color: rgb(171, 243, 36)
-}
-
-
-
-/*---------------------------------------------*/
-/*About me */
-/*---------------------------------------------*/
-
-.about-me-container {
-    display: grid;
-    grid-template-columns: repeat(3fr, auto);
-    grid-gap: 10px;
-    padding: 30px;
-    text-align: center;
-    font-size: medium;
-    display: flex;
-    font-size: medium;
-
-  }
-  
-  .about-me-column {
-    background-color: #3d2e2e;
-    border: 2px solid #af8e8e;
-    padding: 10px;
-    text-justify: auto;
-  }
-
-  .profile-pic { 
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  margin: 40px 10px 10px 10px;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  font-size: medium;
-  }
-
-
-  /*---------------------------------------------*/
-/* Contact page*/
-/*---------------------------------------------*/
-.form-submit {
-    width: 50%; 
-
-}
-
-.form-submit form {
-    width: 100%;
-}
-
-.form-submit .form-row {
-    display: flex; 
-    justify-content: space-between;
-} 
-
-.form-row .form-control {
-    width: 50%; 
-    font-size: 20px;
-    padding: 20px 0;
-    font-family: 'Josefin Sans', sans-serif;
-
-}
-
-
-.form-row .form-control:focus, 
-.form-submit textarea:focus {
-    outline: 0;
-    background-color: yellow;
-}
-
-.form-submit textarea {
-    font-family: 'Josefin Sans', sans-serif;
-    width: 100%;
-    padding: 20px 0;
-    resize: none;
-    margin-top:  5px;
-    font-size: 20px;
-}
-
-form button { 
-    width: 100%;
-    background-color: rgb(29, 197, 29);
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 20px;
-    font-size: 20px;
-
-}
-
-
-.subtitle #email_link {
-    width: 20%;
-    background-color: rgb(40, 29, 197);
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-
-}
-
- #email_link a:hover {
-    background-color: rgb(208, 255, 0);
-    color: black;
-
-}
-
-
-#summary #unCongreso h4 {
-    color: white;
-    width: 100%;
-    padding-left: 10%;
-}
-
-#summary #unCongreso p {
-    color: white;
-    width: 90%;
-    padding-left: 10%;
-}
-
-#espaciador {
-    border-top: 0px ;
-    display: inline-block;
-}
-
-
-.redireccionamiento{
-    text-align: center;
-}
-
-
-/*Responsiveness*/
-
-@media only screen and (max-width: 600px) {
-    .work-details {
-        width: 80%;
-    }
-    .work-details td {
-        padding: 5px;
-        }
-
-    .socials {
-        display: none;
-        }
-
-    .form-submit .form-row{
-        display:flex;
-        flex-direction: column;
-    }    
-
-    .form-row .form-control{
-        width: 100%; 
-        margin-top: 5px;
     }
 
+    
+.link {   /* Base styling for the link */
+   
+    font-size: 12px;
+
 }
+  }
