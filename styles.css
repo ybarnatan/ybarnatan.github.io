@@ -48,7 +48,7 @@ body {
     background-color: rgba(214, 162, 198, 0.856);
     box-shadow: inset 25px 25px 40px rgba(0, 0, 0, 0.24), 
                   inset -25px -25px 40px rgba(255, 253, 253, 0.685);
-    bottom: -30%;
+    bottom: -50%;
     left: 20%;
 }
 
@@ -57,7 +57,7 @@ body {
     background-color: rgba(0, 255, 0, 0.856);
     box-shadow: inset 25px 25px 40px rgba(0, 0, 0, 0.24), 
                   inset -25px -25px 40px rgba(255, 253, 253, 0.685);
-    bottom:  30%;
+    bottom:  40%;
     left: 25%;
 }
 
@@ -66,17 +66,17 @@ body {
     background-color: rgba(255, 0, 0, 0.856);
     box-shadow: inset 25px 25px 40px rgba(0, 0, 0, 0.24), 
                   inset -25px -25px 40px rgba(255, 253, 253, 0.685);
-    bottom: -60%;
+    bottom: -90%;
     left: 75%;
 }
 
 
 .circle-six {
-    background-color: rgb(139, 36, 165);
+    background-color: rgb(21, 255, 0);
     box-shadow: inset 25px 25px 40px rgba(0, 0, 0, 0.24), 
                   inset -25px -25px 40px rgba(255, 253, 253, 0.685);
-    bottom: -80%;
-    left: 10%;
+    bottom: -140%;
+    left: 50%;
 }
 
 
@@ -188,7 +188,7 @@ main {
 
 .options>* h3 {
     height: 50%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,12 +221,11 @@ main {
 /*FOTOS Y BOTONES DENTRO DE CARDS */
 /*   --------------    */
 .photo {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 5px;
-    
+    margin-bottom: 5px;    
 }
 
 .read {
