@@ -9,20 +9,20 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100%;
     font-family: sans-serif;
     color: rgb(255, 255, 255);
-    background-repeat: no-repeat;
-    background-image: linear-gradient(-60deg, rgba(99, 79, 228, 0.892) 10%,
+    background-image: linear-gradient(-50deg, rgba(138, 130, 185, 0.892),
                                                 rgba(8, 0, 255, 0.849));
 }
+
 
 /*   --------------    */
 /* CIRCULOS DE FONDO */
 /*   --------------    */
 .circles>* {
-    width: 15vw;
-    height: 15vw;
+    width: 10vw;
+    height: 10vw;
     position: absolute;
     z-index: -1;
     border-radius: 50%;
@@ -40,7 +40,7 @@ body {
     background-color: rgb(255, 132, 0);
     box-shadow: inset 25px 25px 40px rgba(0, 0, 0, 0.24),
                   inset -25px -25px 40px rgba(255, 253, 253, 0.685);
-    top: 15%;
+    top: 10%;
     left: 70%;
 }
 
@@ -95,17 +95,17 @@ header p {
     display: flex;
     align-items: center;
     margin-top: 1rem;
-    padding: 2px;
+    padding: 2%;
     border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 0.5);
-    font-size: 15px;
+    font-size: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.384);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(60px);
 }
 
 header p:hover {
     background-color: white;
-    color: green;
+    color: rgb(23, 216, 23);
     transition: all .5s ease;
 }
 
@@ -169,7 +169,7 @@ main {
     padding: 30px;
     display: flex;
     justify-content: space-evenly;
-    column-gap: 30px;
+    column-gap: 20px;
 }
 
 .options>* {
@@ -221,11 +221,11 @@ main {
 /*FOTOS Y BOTONES DENTRO DE CARDS */
 /*   --------------    */
 .photo {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 5px;    
+    margin-bottom: 3px;    
 }
 
 .read {
@@ -241,14 +241,14 @@ main {
     display: inline-flex; /* Use flexbox to center the content */
     justify-content: center; /* Horizontally center the text */
     align-items: center; /* Vertically center the text */
-    padding: 10px 20px;
+    padding: 5px 10px;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
     color: #fff;
     background: rgba(255, 255, 255, 0.2); /* Transparent background */
     border-radius: 8px;
-    border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Subtle border */
     backdrop-filter: blur(8px); /* Apply the blur effect */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out; /* Smooth transition */
@@ -276,7 +276,7 @@ main {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background-color: rgba(61, 235, 76, 0.815);
+    background-color: rgb(27, 196, 64);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -453,7 +453,7 @@ body {
     border-radius: 30px 0 0 30px;
     position: fixed;
     right: 0;
-    top: 35vh;
+    top: 45vh;
 }
 
 .social svg {
@@ -478,63 +478,270 @@ body {
   
 
 
-
-/*BOTON LINKEDIN ABAJO For Media query*/
-
-.linkedin_btn {
-    font-size: 1.3rem;
-    position: fixed;
-    bottom: 60px;
-    right: 10px;
-    background-color: rgba(255, 0, 0, 0.815);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    border-radius: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
-    padding: .5rem 1rem;
-    cursor: pointer;
-}
-
-.linkedin_btn:hover {
-    background-color: rgb(255, 255, 255);
-    outline: 2px solid green;
-    color: green;
-    transition: background-color .5s ease, color .5s ease;
-}
-
-
-
-
-
 /*------------------------*/
 /* MEDIA QUERIES */
 /*------------------------*/
+
 .linkedin_btn { /*Escondido a menos que hit media query*/
     display: none;
 }
 
-  @media (max-width: 1800px) {
-   .socials {
-    display: none;
-   }
-   
+/* General Styles - This is your existing code */
 
-   .linkedin_btn {
-    display: block;
-}
+/*-----------------*/
+/* Media Queries   */
+/*-----------------*/
 
-.photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 5px;
+/* For large monitors (max-width 2560px) */
+@media (max-width: 2560px) {
+    .options {
+        padding: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        column-gap: 10px;
     }
 
-    
-.link {   /* Base styling for the link */
-   
-    font-size: 12px;
+    .options > * {
+        max-width: 400px;
+    }
+
+    nav {
+        column-gap: 1vw;
+    }
+
+    .banner h1 {
+        font-size: 4rem;
+    }
+}
+
+/* For medium monitors (max-width 1920px) - 17-inch monitors */
+@media (max-width: 1920px) {
+    .options {
+        padding: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        column-gap: 8px;
+    }
+
+    .options > * {
+        max-width: 300px;
+    }
+
+    .banner h1 {
+        font-size: 3.5rem;
+    }
+
+    nav {
+        column-gap: 1.5vw;
+    }
+
 
 }
-  }
+
+/* For small monitors (max-width 1200px)  */
+@media (max-width: 1200px) {
+    .options {
+        padding: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        column-gap: 8px;
+    }
+
+    .options > * {
+        max-width: 300px;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        column-gap: 1.2vw;
+    }
+    .photo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 3px;    
+    }
+    .typing-demo {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+  
+    .socials {
+        width: 100px;
+        height: 90px;
+        background-color: rgb(251, 251, 251) ;
+        border-radius: 30px 0 0 30px;
+        position: fixed;
+        right: 0;
+        top: 65vh;
+    }
+    
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    
+
+    
+    .options {
+        padding: 10px;
+        display: block; 
+        text-align: center;
+    }
+
+    .options > * {
+        max-width: 100%; 
+        margin-bottom: 15px; 
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        height: 50px;
+        flex-direction: column;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .photo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 3px;    
+    }
+    
+    nav {
+        flex-direction: column; 
+        align-items: center;
+        margin-top: 10px;
+        font-size: 6px;
+    }
+
+    /*typewrite effect*/
+    .wrapper {
+        height: 6vh;
+        /*This part is important for centering*/
+        display: grid;
+        place-items: center;
+    }
+    
+    .typing-demo {
+        font-size: 1.6em;
+    }
+
+    .socials {
+        width: 90px;
+        height: 80px;
+        background-color: rgb(251, 251, 251) ;
+        border-radius: 30px 0 0 30px;
+        position: fixed;
+        right: 0;
+        top: 75vh;
+    }
+    
+
+}
+
+/* For  small mobile screens */
+@media (max-width: 600px) {
+    .typing-demo {
+        font-size: 1.5em;
+    }
+    .socials {
+        width: 90px;
+        height: 80px;
+        background-color: rgb(251, 251, 251) ;
+        border-radius: 30px 0 0 30px;
+        position: fixed;
+        right: 0;
+        top: 45vh;
+    }
+
+    .circles>* {
+        display: none;
+    }
+}
+
+
+
+/* For very small mobile screens */
+@media (max-width: 500px) {
+    body {
+        font-size: 12px; /* Even smaller font size for very small screens */
+    }
+
+    .options {
+        padding: 5px;
+    }
+
+    .options > * {
+        max-width: 80%; /* Further reduce card width */
+    }
+
+    .banner {
+        height: 120px;
+    }
+
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+
+  
+    .community {
+        bottom: 15px;
+        right: 15px;
+    }
+
+
+    .photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 3px;    
+    }
+    
+    nav {
+        flex-direction: column; /* Cambiar a columna */
+        align-items: center;
+        margin-top: 10px;
+    }
+
+
+    .typing-demo {
+        display: none;
+    }
+
+    .circles>* {
+        display: none;
+    }
+
+    header p {
+        font-size: 10px;
+    }
+
+    .socials {
+        width: 70px;
+        height: 60px;
+        background-color: rgb(251, 251, 251) ;
+        border-radius: 30px 0 0 30px;
+        position: fixed;
+        right: 0;
+        top: 75vh;
+    }
+    
+
+}
